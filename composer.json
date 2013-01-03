@@ -1,0 +1,21 @@
+{
+    "name": "elvisciotti/affiliate-window-soapclient",
+    "type": "library",
+    "description": "namespaced Soap Clients to use affiliate window APIs",
+    "keywords": ["affiliate window", "API", "AW", "SOAP", "Shop Window"],
+    "homepage": "https://github.com/elvisciotti/affiliate-window-api",
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Elvis Ciotti",
+            "email": "elvis@phpntips.com"
+        }
+    ],
+    "require": {
+         "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-0": { "AffiliateWindow": "library/" }
+    }
+}
