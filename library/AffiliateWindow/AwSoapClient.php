@@ -10,20 +10,16 @@ class AwSoapClient extends AbstractPhp5Client
     const API_NAMESPACE = 'http://api.affiliatewindow.com/';
 
     function __construct(
-        $apiKey, 
         $apiUsername = null, $apiPassword = null, $apiUserType = null
     ) {
         // create user object
         $oUser = new \stdClass();
 
         // IF api key is used, add only that to user object
-        if ($apiKey) {
-            $oUser->sApiKey = $apiKey;
-        } else {
-            $oUser->iId = $apiUsername;
-            $oUser->sPassword = $apiPassword;
-            $oUser->sType = $apiUserType;
-        }
+       
+        $oUser->iId = $apiUsername;
+        $oUser->sPassword = $apiPassword;
+        $oUser->sType = $apiUserType;
         
         parent::__construct(
             self::WSDL, 
